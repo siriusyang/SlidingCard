@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="widget.common.slidingcard.MainActivity">
+
+    <widget.common.slidingcard.SlidingCardLayout2
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="@color/cardview_dark_background"
+        app:textColor="#ffffff"
+        app:text="基督教看电视" />
+    <widget.common.slidingcard.SlidingCardLayout2
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="#1fb41f"
+        app:textColor="#ffffff"
+        app:text="基督教看电视222" />
+    <widget.common.slidingcard.SlidingCardLayout2
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="@color/colorPrimary"
+        app:textColor="#ffffff"
+        app:text="基督教看电视3333" />
+    <widget.common.slidingcard.SlidingCardLayout2
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="@color/cardview_dark_background"
+        app:textColor="#ffffff"
+        app:text="基督教看电视4444" />
+    <widget.common.slidingcard.SlidingCardLayout2
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="#1fb41f"
+        app:textColor="#ffffff"
+        app:text="基督教看电视555" />
+</android.support.design.widget.CoordinatorLayout>

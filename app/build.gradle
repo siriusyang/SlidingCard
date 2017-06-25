@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+ext {
+    //全局变量控制，可在module中的build.gradle文件通过rootProject.ext.xxx开头来使用
+    compileSdkVersion = 25
+    buildToolsVersion = '25'
+    supportVersion = '25.3.1'
+    //主程序版本
+    targetSdkVersion = 25
+    minSdkVersion = 16
+    versionCode = 1
+    versionName = "1.0.0"
+    //library版本
+    support_v4 = 'com.android.support:support-v4:' + supportVersion
+    support_appcompat_v7 = 'com.android.support:appcompat-v7:' + supportVersion
+    support_design = 'com.android.support:design:' + supportVersion
+    support_cardview_v7 = 'com.android.support:cardview-v7:' + supportVersion
+    support_recyclerview_v7 = 'com.android.support:recyclerview-v7:' + supportVersion
+}
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "widget.common.slidingcard"
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile project.ext.support_v4
+    compile project.ext.support_appcompat_v7
+    compile project.ext.support_recyclerview_v7
+    compile project.ext.support_cardview_v7
+    compile project.ext.support_design
+}

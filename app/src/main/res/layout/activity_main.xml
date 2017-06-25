@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <widget.common.slidingcard.SlidingCardLayout
+        android:id="@+id/pane_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#A55"
+        android:text="卡片  1"/>
+
+    <widget.common.slidingcard.SlidingCardLayout
+        android:id="@+id/pane_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#5A5"
+        android:text="卡片 2"/>
+
+    <widget.common.slidingcard.SlidingCardLayout
+        android:id="@+id/pane_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#55A"
+        android:text="卡片 3"/>
+
+    <widget.common.slidingcard.SlidingCardLayout
+        android:id="@+id/pane_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#5AA"
+        android:text="卡片 4"/>
+    <widget.common.slidingcard.SlidingCardLayout
+        android:id="@+id/pane_five"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#F00"
+        android:text="卡片 5"/>
+</android.support.design.widget.CoordinatorLayout>
